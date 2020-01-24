@@ -1,0 +1,17 @@
+{
+  "name": "Spotify-link-jacker",
+  "version": "0.1",
+  "description": "dag stomme web player linkjes",
+  "background": {
+    "scripts": ["script.js"],
+    "persistent": true
+  },
+  "permissions": [
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "*://open.spotify.com/",
+    "*://play.spotify.com/"
+  ],
+  "manifest_version": 2
+}
