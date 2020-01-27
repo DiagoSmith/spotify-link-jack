@@ -3,7 +3,7 @@
   "version": "0.1",
   "description": "dag stomme web player linkjes",
   "background": {
-    "scripts": ["script.js"],
+    "scripts": ["stripper.js", "script.js"],
     "persistent": true
   },
   "permissions": [
