@@ -10,11 +10,7 @@ chrome.webRequest.onBeforeRequest.addListener(
   details => {
     const { url } = details;
 
-    console.error(url);
-
     if (url.includes(SPOTIFY_HOSTS[0]) || url.includes(SPOTIFY_HOSTS[1])) {
-      const redirectUrl = convertUrl(url);
-      console.error(redirectUrl);
       return { redirectUrl: convertUrl(url) };
     }
   },
